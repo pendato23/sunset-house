@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pendato23/sunset-house.git"
+    "url": "git+https://github.com/simigeum/sunset-house.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/pendato23/sunset-house/issues"
+    "url": "https://github.com/simigeum/sunset-house/issues"
   },
-  "homepage": "https://github.com/pendato23/sunset-house#readme",
+  "homepage": "https://github.com/simigeum/sunset-house#readme",
   "dependencies": {
     "node-sass": "^6.0.0"
   }
