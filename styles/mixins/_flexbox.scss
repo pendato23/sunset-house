@@ -14,18 +14,18 @@ $flex-map: (
 @mixin flexbox($js: center, $ai: center) {
   display: flex;
   align-items: _get-flex-value($ai);
-  justify-self: _get-flex-value($js);
+  justify-content: _get-flex-value($js);
 }
 
 @mixin inline-flexbox($js: center, $ai: center) {
   display: inline-flex;
   align-items: _get-flex-value($ai);
-  justify-self: _get-flex-value($js);
+  justify-content: _get-flex-value($js);
 }
 
 @mixin column-flexbox($js: center, $ai: center) {
   display: flex;
   flex-direction: column;
   align-items: _get-flex-value($ai);
-  justify-self: _get-flex-value($js);
+  justify-content: _get-flex-value($js);
 }
