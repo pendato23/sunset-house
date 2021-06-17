@@ -1,0 +1,40 @@
+.gnb-left {
+  .logo {
+    @include pos-center(absolute);
+    img,
+    a {
+      display: block;
+      width: auto;
+      height: 20px;
+    }
+  }
+}
+
+.gnb {
+  @include flexbox(start);
+
+  height: 50px;
+  border-bottom: 1px solid $border;
+
+  .gnb-wrapper {
+    @include flexbox(between);
+    position: relative;
+  }
+
+  &-icon-button {
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    color: $beige;
+  }
+
+  &-icon-group {
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+  }
+
+  &-icon-search {
+    margin-right: 4px;
+  }
+}
