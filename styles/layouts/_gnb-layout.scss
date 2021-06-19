@@ -1,0 +1,55 @@
+@include responsive(T) {
+  .gnb {
+    &-wrapper {
+      height: 80px;
+    }
+
+    &-left {
+      @include flexbox(start);
+      position: relative;
+    }
+
+    &-nav-list {
+      @include flexbox(start);
+
+      .gnb-nav-item {
+        @include text-style(18, $primary);
+        margin-right: 24px;
+        font-weight: 700;
+        transition: color 200ms ease-in-out;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          color: $beige;
+        }
+      }
+    }
+
+    &-avatar-button {
+      margin-left: 4px;
+    }
+
+    .button-group {
+      .btn-primary {
+        margin-left: 24px;
+      }
+
+      a {
+        margin: 0 4px;
+      }
+    }
+
+    .logo {
+      position: static;
+      margin-right: 32px;
+      transform: none;
+
+      img {
+        height: 24px;
+      }
+    }
+  }
+}
