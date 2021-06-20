@@ -28,8 +28,13 @@
     position: absolute;
     top: $button-size + $tooltip-size + 8px;
     @include pos-center-x;
+    display: none;
     border-radius: 4px;
     box-shadow: $dropdown-shadow;
+
+    &.on {
+      display: block;
+    }
 
     &::before,
     &::after {
