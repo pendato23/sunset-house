@@ -16,7 +16,7 @@ $(document).ready(function () {
 
   //sidebar 버튼
   $('.drawer-menu').click(function () {
-    $(this).toggleClass('is-open is-active')
-    $(this).siblings('.drawer-menu').removeClass('is-open is-active')
+    $(this).toggleClass('is-open')
+    $(this).siblings('.drawer-menu').removeClass('is-open')
   })
 })
