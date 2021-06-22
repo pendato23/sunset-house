@@ -1,7 +1,7 @@
 $(document).ready(function () {
   //my-menu 버튼
   $('.my-menu-button').click(function () {
-    $('.my-menu-content').fadeToggle(200)
+    $('.my-menu').toggleClass('is-active')
   })
 
   //sidebar
