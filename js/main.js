@@ -16,16 +16,8 @@ $(document).ready(function () {
   })
 
   //sidebar 버튼
-  $('.drawer-menu-button').click(function () {
-    $(this).next('.drawer-menu-content').slideToggle(200)
-    $(this).find('.ic-chevron').toggleClass('is-active')
-    $(this)
-      .next('.drawer-menu-content')
-      .siblings('.drawer-menu-content')
-      .slideUp()
-    $(this)
-      .siblings('.drawer-menu-button')
-      .find('.ic-chevron')
-      .removeClass('is-active')
+  $('.drawer-menu').click(function () {
+    $(this).toggleClass('is-open is-active')
+    $(this).siblings('.drawer-menu').removeClass('is-open is-active')
   })
 })
