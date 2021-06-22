@@ -8,11 +8,11 @@ $(document).ready(function () {
   //sidebar
   $('.gnb .ic-menu').click(function () {
     $('.sidebar').addClass('is-active')
-    $('.bg').addClass('is-active')
+    $('.overlay').addClass('is-active')
   })
-  $('.bg').click(function () {
+  $('.overlay').click(function () {
     $('.sidebar').removeClass('is-active')
-    $('.bg').removeClass('is-active')
+    $('.overlay').removeClass('is-active')
   })
 
   //sidebar 버튼
