@@ -19,4 +19,14 @@ $(document).ready(function () {
     $(this).toggleClass('is-open')
     $(this).siblings('.drawer-menu').removeClass('is-open')
   })
+
+  //search-modal
+  $('.gnb-icon-button.lg-hidden').click(function () {
+    $('.search-modal').addClass('is-open')
+    $('.overlay').addClass('is-active')
+  })
+  $('.search-modal-header .btn-ghost').click(function () {
+    $('.search-modal').removeClass('is-open')
+    $('.overlay').removeClass('is-active')
+  })
 })
