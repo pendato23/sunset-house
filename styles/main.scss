@@ -13,6 +13,7 @@
 @import './mixins/responsive';
 @import './mixins/positions';
 @import './mixins/flexbox';
+@import './mixins/scrollbar';
 
 @import './modules/tags';
 @import './modules/avatars';
@@ -28,10 +29,10 @@
 @import './components/my-menu';
 @import './components/drawer-menu';
 @import './components/search-history';
-@import './components/lnb-nav';
 
 @import './layouts/grids';
 @import './layouts/gnb';
 @import './layouts/sidebar';
 @import './layouts/overlay';
 @import './layouts/search-modal';
+@import './layouts/lnb';
