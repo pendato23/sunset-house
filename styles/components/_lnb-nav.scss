@@ -1,50 +1,35 @@
 .lnb {
-  height: 40px;
-  border-bottom: 1px solid $border;
+  overflow-y: auto;
 
-  &-wrap {
-    width: 100%;
-    overflow-y: scroll;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
+  &::-webkit-scrollbar {
+    display: none;
   }
 
   &-list {
     @include inline-flexbox(start);
-
-    position: relative;
-    left: -7px;
+    height: 40px;
+    padding: 0 7px;
+    margin-left: -15px;
+    white-space: nowrap;
+    border-bottom: 1px solid $border;
   }
 
   &-item {
-    position: relative;
-    flex-shrink: 0;
-
     &.is-active {
       a {
         color: $beige;
-
-        &::after {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 2px;
-          background-color: $beige;
-          content: '';
-          transform: translateX(-8px);
-        }
+        border-bottom-color: $beige;
       }
     }
 
     a {
-      @include flexbox(start);
+      @include inline-flexbox;
       @include text-style(13, $dark);
       width: 100%;
       height: 40px;
       padding: 0 8px;
       font-weight: 700;
+      border-bottom: 2px solid transparent;
 
       &:hover {
         color: $beige;
