@@ -37,4 +37,12 @@ $(document).ready(function () {
   $('.gnb-search .form-input').blur(function () {
     $('.gnb-search').find('.search-history').removeClass('is-active')
   })
+
+  //lnb
+
+  $('.lnb-item').click(function (e) {
+    e.preventDefault() // a[href] 때문에 refresh되어 초기화되는 것을 막음.
+    $(this).addClass('is-active')
+    $(this).siblings('.lnb-item').removeClass('is-active')
+  })
 })
