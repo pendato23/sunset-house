@@ -169,4 +169,10 @@
       }
     }
   }
+
+  @include responsive(D) {
+    &-delivery {
+      margin-bottom: 20px;
+    }
+  }
 }
