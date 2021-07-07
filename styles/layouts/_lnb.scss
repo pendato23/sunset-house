@@ -44,7 +44,7 @@
 
   @include responsive(T) {
     height: $lnb-height-md;
-    overflow-y: visible;
+    overflow-x: visible;
     border-bottom: 1px solid $border;
 
     &-list {
