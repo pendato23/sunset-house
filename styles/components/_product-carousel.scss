@@ -1,10 +1,8 @@
 .product-carousel {
-  $sm-margin: 15px;
-
   position: relative;
 
   &-slider {
-    margin: 0 -#{$sm-margin};
+    margin: 0 -#{$grid-margin};
   }
 
   &-thumbnail {
