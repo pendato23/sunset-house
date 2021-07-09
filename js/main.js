@@ -45,4 +45,9 @@ $(document).ready(function () {
     $(this).addClass('is-active')
     $(this).siblings('.lnb-item').removeClass('is-active')
   })
+
+  //product-spec
+  $('.product-spec .button-wrapper button').click(function () {
+    $('.product-spec').addClass('is-open')
+  })
 })
