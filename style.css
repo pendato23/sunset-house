@@ -1556,8 +1556,10 @@ i {
     display: block;
     width: 100%; }
   @media screen and (min-width: 768px) {
-    .product-spec .product-table {
-      margin-top: 40px; } }
+    .product-spec {
+      height: auto; }
+      .product-spec .product-table {
+        margin-top: 40px; } }
 
 .review-scoreboard {
   display: flex;
