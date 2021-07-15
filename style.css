@@ -1604,6 +1604,23 @@ i {
     height: 96px;
     background-color: #e0e2e7;
     content: ''; }
+  @media screen and (min-width: 768px) {
+    .review-scoreboard {
+      height: 148px;
+      padding: 0 72px; }
+      .review-scoreboard .score-summary,
+      .review-scoreboard .score-detail {
+        width: auto; }
+      .review-scoreboard .score-summary {
+        flex-direction: row-reverse; }
+        .review-scoreboard .score-summary .average-score {
+          margin-bottom: 0; }
+        .review-scoreboard .score-summary .star-rating {
+          margin-right: 16px;
+          font-size: 24px; }
+      .review-scoreboard::before {
+        height: 72px;
+        margin: 0 69px; } }
 
 .score-stats-list {
   display: inline-block; }
@@ -1644,6 +1661,13 @@ i {
         border-radius: 2.5px; }
     .score-stats-item dd .count {
       font-weight: 400; }
+
+@media screen and (min-width: 768px) {
+  .score-stats-item dt {
+    margin-right: 8px; }
+  .score-stats-item dd .bar-graph {
+    width: 180px;
+    margin-right: 8px; } }
 
 /*
  * MOBILE (<786px)----------------------------
