@@ -667,7 +667,7 @@ address {
       .pagination .page-list .page-item a,
       .pagination .page-list .page-item button {
         min-width: 26px;
-        padding: 0 8px; }
+        padding: 0 8px 2px; }
         .pagination .page-list .page-item a:hover,
         .pagination .page-list .page-item button:hover {
           color: #ceb97b; }
@@ -1762,6 +1762,11 @@ i {
     .review-card-header .avatar-24:hover,
     .review-card-header .user-name:hover {
       opacity: 0.4; } }
+
+.product-review .review-item {
+  border-bottom: 1px solid #e0e2e7; }
+  .product-review .review-item:last-child {
+    border-bottom: 0; }
 
 /*
  * MOBILE (<786px)----------------------------
