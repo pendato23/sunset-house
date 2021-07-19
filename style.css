@@ -1655,7 +1655,7 @@ i {
       background-color: #e0e2e7;
       border-radius: 2.5px; }
       .score-stats-item dd .bar-graph .active-bar {
-        width: 30px;
+        width: 0;
         height: 5px;
         overflow: hidden;
         background-color: #ceb97b;
