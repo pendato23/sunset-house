@@ -1831,7 +1831,14 @@ i {
       font-weight: 700;
       color: #ceb97b; }
     .inquiry-card-body p {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       color: #3f4150; }
+      .inquiry-card-body p i {
+        margin-right: 8px;
+        font-size: 16px;
+        color: #b2b3b9; }
   @media screen and (min-width: 768px) {
     .inquiry-card-header {
       margin-bottom: 20px; }
