@@ -50,4 +50,9 @@ $(document).ready(function () {
   $('.product-spec .button-wrapper button').click(function () {
     $('.product-spec').addClass('is-open')
   })
+
+  //product-inquiry(mobile)
+  $('.product-inquiry .icon-button').click(function () {
+    $('.product-inquiry').addClass('is-open')
+  })
 })
