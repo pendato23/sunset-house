@@ -55,4 +55,9 @@ $(document).ready(function () {
   $('.product-inquiry .icon-button').click(function () {
     $('.product-inquiry').addClass('is-open')
   })
+
+  //product-shipment
+  $('.product-shipment .icon-button').click(function () {
+    $('.product-shipment').addClass('is-open')
+  })
 })
