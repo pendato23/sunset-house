@@ -1527,7 +1527,6 @@ i {
 .product-spec {
   position: relative;
   height: 470px;
-  padding-top: 20px;
   overflow: hidden; }
   .product-spec.is-open {
     height: auto; }
