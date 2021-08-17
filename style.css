@@ -1912,13 +1912,23 @@ i {
     display: none; } }
 
 .product-card-image {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
   margin-bottom: 8px;
   overflow: hidden;
   border-radius: 4px; }
   .product-card-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: block;
     width: 100%;
-    transition: transform 200ms ease-in-out; }
+    height: 100%;
+    transition: transform 200ms ease-in-out;
+    object-fit: cover; }
 
 .product-card-brand {
   font-size: 12px;
@@ -2005,7 +2015,7 @@ i {
     .product-recommendation .product-item a:active .product-card-title {
       opacity: 0.5; }
     .product-recommendation .product-item a:active img {
-      transform: scale(1.1); }
+      transform: translate(-50%, -50%) scale(1.1); }
 
 @media screen and (min-width: 768px) {
   .product-recommendation .product-item {
@@ -2018,7 +2028,7 @@ i {
   .product-recommendation .product-item a:hover .product-card-title {
     opacity: 0.5; }
   .product-recommendation .product-item a:hover img {
-    transform: scale(1.1); } }
+    transform: translate(-50%, -50%) scale(1.1); } }
 
 .gallery-card {
   position: relative;
