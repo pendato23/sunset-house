@@ -60,4 +60,16 @@ $(document).ready(function () {
   $('.product-shipment .icon-button').click(function () {
     $('.product-shipment').addClass('is-open')
   })
+
+  //order-cta
+  $('.order-cta .btn-ghost').click(function () {
+    $(this).toggleClass('is-active')
+    $('.order-cta .btn-ghost i').toggleClass('ic-bookmark-filled')
+
+    if ($(this).hasClass('is-active')) {
+      $(this).find('span').text('18,303')
+    } else {
+      $(this).find('span').text('18,302')
+    }
+  })
 })
