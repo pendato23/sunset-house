@@ -1,33 +1,38 @@
+const commonOptions = {
+  asNavThumbnails: true,
+  arrowKeys: true,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
+}
+
 const productCarousel = tns({
+  ...commonOptions,
   container: '.product-carousel .slider-list',
   controls: false,
   navContainer: '.product-carousel .thumbnail-list',
-  asNavThumbnails: true,
-  arrowKeys: true,
   autoplay: true,
   autoplayHoverPauser: true,
   autoplayButtonOutput: false,
-  mouseDrag: true,
-  preventScrollOnTouch: true,
 })
 
-const userGallery = tns({
-  container: '.user-gallery .slider-list',
+const userGalleryMobile = tns({
+  ...commonOptions,
+  container: '.user-gallery.is-mobile .slider-list',
+  navContainer: '.user-gallery.is-mobile .thumbnail-list',
   controls: false,
-  controlsContainer: '.user-gallery-controls',
-  navContainer: '.user-gallery .thumbnail-list',
-  asNavThumbnails: true,
   gutter: 4,
   edgePadding: 16,
   loop: false,
-  arrowKeys: true,
-  mouseDrag: true,
-  preventScrollOnTouch: true,
-  responsive: {
-    768: {
-      gutter: 6,
-      edgePadding: 81,
-      controls: true,
-    },
-  },
+})
+
+const userGalleryDesktop = tns({
+  ...commonOptions,
+  container: '.user-gallery.is-desktop .slider-list',
+  controls: true,
+  controlsContainer: '.user-gallery.is-desktop .user-gallery-controls',
+  navContainer: '.user-gallery.is-desktop .thumbnail-list',
+  asNavThumbnails: true,
+  gutter: 6,
+  edgePadding: 81,
+  loop: false,
 })
