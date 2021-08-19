@@ -2691,6 +2691,8 @@ i {
     flex-shrink: 0;
     width: 72px;
     margin-right: 4px; }
+    .order-cta .btn-ghost.is-active i {
+      color: #ceb97b; }
     .order-cta .btn-ghost i {
       font-size: 24px;
       color: #3f4150; }
