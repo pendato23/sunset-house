@@ -21,9 +21,13 @@
       color: $primary;
       background-color: $white;
       border-radius: 50%;
-      transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+      opacity: 1;
+      visibility: visible;
+      transition: background-color 100ms ease-in-out, color 100ms ease-in-out,
+        opacity 400ms ease-in-out, visibility 400ms ease-in-out;
 
       &[disabled] {
+        opacity: 0;
         visibility: hidden;
       }
 
