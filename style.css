@@ -2712,10 +2712,13 @@ i {
   z-index: 400;
   display: none;
   width: 100%;
+  max-height: 75vh;
   padding-top: 16px;
+  overflow-y: auto;
   background-color: #fff;
   border-radius: 12px 12px 0 0;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15); }
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+  overscroll-behavior: contain; }
   .order-form-modal.is-open {
     display: block;
     animation-duration: 300ms;
@@ -2725,9 +2728,15 @@ i {
   .order-form-modal .order-checkouts,
   .order-form-modal .order-summary {
     margin-bottom: 16px; }
+  .order-form-modal .order-summary {
+    margin-bottom: 70px; }
   .order-form-modal .button-group {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     padding: 4px;
-    padding-top: 0; }
+    background-color: #fff; }
     .order-form-modal .button-group button:first-child {
       margin-right: 4px; }
   @media screen and (min-width: 768px) {
