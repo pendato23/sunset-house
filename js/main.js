@@ -72,4 +72,13 @@ $(document).ready(function () {
       $(this).find('span').text('18,302')
     }
   })
+
+  //order-form-modal
+  $('.order-cta .btn-primary').click(function () {
+    $('.order-form-modal').addClass('is-open')
+    $('.overlay').addClass('is-active')
+  })
+  $('.overlay').click(function () {
+    $('.order-form-modal').removeClass('is-open')
+  })
 })
