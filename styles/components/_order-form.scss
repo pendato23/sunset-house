@@ -35,9 +35,10 @@
 
     button {
       width: 50%;
+      margin-right: 8px;
 
-      &:first-child {
-        margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
       }
     }
   }
