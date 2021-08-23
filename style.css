@@ -2754,8 +2754,13 @@ i {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  position: sticky;
+  top: 184px;
   flex-direction: column;
-  height: 680px; }
+  height: 680px;
+  max-height: calc(100vh - 184px);
+  min-height: calc(100vh - 370px);
+  padding: 24px 0; }
   .floating-order-form .order-checkouts {
     flex-grow: 1;
     overflow-y: auto; }
