@@ -1347,9 +1347,10 @@ i {
   align-items: center;
   justify-content: space-between; }
   .order-form .button-group button {
-    width: 50%; }
-    .order-form .button-group button:first-child {
-      margin-right: 8px; }
+    width: 50%;
+    margin-right: 8px; }
+    .order-form .button-group button:last-child {
+      margin-right: 0; }
 
 .checkout-card {
   position: relative;
@@ -2748,5 +2749,38 @@ i {
     transform: translate3d(0, 100%, 0); }
   100% {
     transform: translate3d(0, 0, 0); } }
+
+.floating-order-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 680px; }
+  .floating-order-form .order-checkouts {
+    flex-grow: 1;
+    overflow-y: auto; }
+    .floating-order-form .order-checkouts::-webkit-scrollbar {
+      display: none !important; }
+  .floating-order-form > * {
+    width: 100%; }
+  .floating-order-form .order-inputs,
+  .floating-order-form .order-summary,
+  .floating-order-form .button-group {
+    flex-grow: 0;
+    flex-shrink: 0; }
+  .floating-order-form .button-group .bookmark-button {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 55px;
+    border: 1px solid #e0e2e7;
+    border-radius: 4px;
+    transition: background-color 200ms ease-in-out; }
+    .floating-order-form .button-group .bookmark-button.is-active i {
+      color: #ceb97b; }
+    .floating-order-form .button-group .bookmark-button:hover {
+      background-color: #f7f8fa; }
+    .floating-order-form .button-group .bookmark-button i {
+      font-size: 32px;
+      color: #3f4150; }
 
 /*# sourceMappingURL=style.css.map */
