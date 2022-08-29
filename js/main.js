@@ -4,12 +4,6 @@ $(document).ready(function () {
     $('.my-menu').toggleClass('is-active')
   })
 
-  //sidebar 버튼
-  $('.drawer-menu').click(function () {
-    $(this).toggleClass('is-open')
-    $(this).siblings('.drawer-menu').removeClass('is-open')
-  })
-
   //search-modal
   $('.gnb-icon-button.lg-hidden').click(function () {
     $('.search-modal').addClass('is-open')
