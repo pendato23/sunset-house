@@ -40,11 +40,6 @@ $(document).ready(function () {
     $('.product-inquiry').addClass('is-open')
   })
 
-  //product-shipment
-  $('.product-shipment .icon-button').click(function () {
-    $('.product-shipment').addClass('is-open')
-  })
-
   //order-cta
   $('.order-cta .btn-ghost').click(function () {
     $(this).toggleClass('is-active')
