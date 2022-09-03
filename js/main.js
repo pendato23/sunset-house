@@ -4,16 +4,6 @@ $(document).ready(function () {
     $('.my-menu').toggleClass('is-active')
   })
 
-  //search-modal
-  $('.gnb-icon-button.lg-hidden').click(function () {
-    $('.search-modal').addClass('is-open')
-    $('.overlay').addClass('is-active')
-  })
-  $('.search-modal-header .btn-ghost').click(function () {
-    $('.search-modal').removeClass('is-open')
-    $('.overlay').removeClass('is-active')
-  })
-
   //gnb-search
   $('.gnb-search .form-input').focus(function () {
     $('.gnb-search').find('.search-history').addClass('is-active')
