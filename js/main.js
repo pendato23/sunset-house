@@ -1,8 +1,8 @@
 $(document).ready(function () {
   //my-menu 버튼
-  $('.my-menu-button').click(function () {
-    $('.my-menu').toggleClass('is-active')
-  })
+  // $('.my-menu-button').click(function () {
+  //   $('.my-menu').toggleClass('is-active')
+  // })
 
   //gnb-search
   $('.gnb-search .form-input').focus(function () {
