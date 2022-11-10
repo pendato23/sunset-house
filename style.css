@@ -312,6 +312,11 @@ template {
 [hidden] {
   display: none; }
 
+/** remove default input, button, select, option, textarea style in safari */
+button, input[type=email], input[type=file], input[type=number], input[type=password], input[type=submit], input[type=tel], input[type=text], option, select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: textfield; }
+
 * {
   margin: 0;
   font-family: "Noto Sans KR", sans-serif;
@@ -893,7 +898,7 @@ i {
     visibility: hidden;
     transform: translate3d(-50%, 30px, 0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
-    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out, transform 200ms ease-in-out; }
+    transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out, transform 200ms ease-in-out; }
     .my-menu-content::before, .my-menu-content::after {
       position: absolute;
       left: 50%;
@@ -2122,7 +2127,7 @@ i {
       border-radius: 50%;
       opacity: 1;
       visibility: visible;
-      transition: background-color 100ms ease-in-out, color 100ms ease-in-out, opacity 400ms ease-in-out, visibility 400ms ease-in-out; }
+      transition: background-color 100ms ease-in-out, color 100ms ease-in-out, opacity 400ms ease-in-out, visibility 400ms ease-in-out; }
       .user-gallery-controls .control-button[disabled] {
         opacity: 0;
         visibility: hidden; }

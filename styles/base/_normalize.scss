@@ -350,3 +350,10 @@ template {
 [hidden] {
   display: none;
 }
+
+/** remove default input, button, select, option, textarea style in safari */
+
+button, input[type=email], input[type=file], input[type=number], input[type=password], input[type=submit], input[type=tel], input[type=text], option, select, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  }
